@@ -1,17 +1,17 @@
-import * as React from "react";
-import MapView from "react-native-maps";
-import { StyleSheet } from "react-native";
-import * as Location from "expo-location";
+import * as React from 'react';
+import MapView from 'react-native-maps';
+import { StyleSheet } from 'react-native';
+import * as Location from 'expo-location';
 
 export default function Map() {
   const [location, setLocation] = React.useState({});
-  const [errorMsg, setErrorMsg] = React.useState("");
+  const [errorMsg, setErrorMsg] = React.useState('');
 
   React.useEffect(() => {
     (async () => {
       let { status } = await Location.requestPermissionsAsync();
-      if (status !== "granted") {
-        setErrorMsg("Permission to access location was denied");
+      if (status !== 'granted') {
+        setErrorMsg('Permission to access location was denied');
         return;
       }
 
@@ -20,7 +20,7 @@ export default function Map() {
     })();
   });
 
-  let text = "Waiting..";
+  let text = 'Waiting..';
   if (errorMsg) {
     text = errorMsg;
   } else if (location) {
@@ -42,7 +42,7 @@ export default function Map() {
         longitudeDelta: 0.0421,
       }}
       showsUserLocation={true}
-      provider="google"
+      provider='google'
       onRegionChangeComplete={onRegionChangeComplete}
     ></MapView>
   );
@@ -50,9 +50,9 @@ export default function Map() {
 
 const styles = StyleSheet.create({
   map: {
-    width: "100%",
-    height: "100%",
+    width: '100%',
+    height: '100%',
     zIndex: -1,
-    position: "absolute",
+    position: 'absolute',
   },
 });
