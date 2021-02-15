@@ -10,6 +10,9 @@
 *.userosscache
 *.sln.docstates
 .expo/web
+.expo/README.md
+.expo/settings.json
+
 
 
 # User-specific files (MonoDevelop/Xamarin Studio)
