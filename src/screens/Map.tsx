@@ -18,7 +18,10 @@ export default function Map() {
       let location = await Location.getCurrentPositionAsync({});
       setLocation(location);
     })();
-  });
+    return () => {
+      setLocation({});
+    };
+  }, []);
 
   let text = 'Waiting..';
   if (errorMsg) {
