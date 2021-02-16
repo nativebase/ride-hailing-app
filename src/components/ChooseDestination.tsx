@@ -23,7 +23,7 @@ export default function ChooseDestination() {
     <SafeAreaView>
       <Box>
         <Box p={3} bg='white'>
-          <Row>
+          <Row alignItems={'center'}>
             <IconButton
               onPress={() => navigation.goBack()}
               variant='ghost'
@@ -38,7 +38,7 @@ export default function ChooseDestination() {
                   uri:
                     'https://d1w2poirtb3as9.cloudfront.net/default.jpeg?Expires=1609289856&Signature=Rau9a8JQaw43o9XcoCk2pDh7IwyicujZLbYJS2Y-uzDokR43BZJnavT~Nr3B9rrg86FHXNB4BE-5ImQE86iJbrS0KTYpwvAavi0H2Hya3wEyDF0SVq1lrMc1iZGAeoozpwLrjnu12iKxzMUL9kyrM6jOgn00rug86NrISQz9lcxo9ZqtnJMGFYepkiQBgLQRaajtnPYzWBg5VZeEqy9-WHzGfMRZEXPW2DT-ZeEeu~FWBCIxx6aNcQMyEikZp-s2IHSpLLGTAfPp~MtLu3TrkNowN7nB74y6S5NjsKv~WXDVzW4g63QshelEUUe91a4R6XtKYUtY3ZdRay3zsamVVA__&Key-Pair-Id=APKAJSDH2OZQQSA64LQQ',
                 }}
-                rounded='50'
+                rounded={50}
               />
               <Text fontWeight={400} px={3}>
                 For me
@@ -105,7 +105,9 @@ export default function ChooseDestination() {
           </Box>
         </Box>
         <ScrollView>
-          <Box py={1} borderTopWidth={2} borderColor='gray.100' shadow={2}>
+          <Divider borderColor='gray.300' borderWidth={1} />
+
+          <Box py={1} borderTopWidth={2} borderColor='gray.100'>
             <Row py={2} px={5} alignItems='center'>
               <Box p={2} bg='gray.400' borderRadius={50}>
                 <Icon viewBox='0 0 512.002 512.002' color='white' size={4}>

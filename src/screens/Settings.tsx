@@ -46,7 +46,7 @@ export default function Settings() {
                   uri:
                     'https://d1w2poirtb3as9.cloudfront.net/default.jpeg?Expires=1609289856&Signature=Rau9a8JQaw43o9XcoCk2pDh7IwyicujZLbYJS2Y-uzDokR43BZJnavT~Nr3B9rrg86FHXNB4BE-5ImQE86iJbrS0KTYpwvAavi0H2Hya3wEyDF0SVq1lrMc1iZGAeoozpwLrjnu12iKxzMUL9kyrM6jOgn00rug86NrISQz9lcxo9ZqtnJMGFYepkiQBgLQRaajtnPYzWBg5VZeEqy9-WHzGfMRZEXPW2DT-ZeEeu~FWBCIxx6aNcQMyEikZp-s2IHSpLLGTAfPp~MtLu3TrkNowN7nB74y6S5NjsKv~WXDVzW4g63QshelEUUe91a4R6XtKYUtY3ZdRay3zsamVVA__&Key-Pair-Id=APKAJSDH2OZQQSA64LQQ',
                 }}
-                rounded='50'
+                rounded={50}
               />
               <VStack pl={4} space={1} width='75%'>
                 <Text>meenu makkar</Text>
