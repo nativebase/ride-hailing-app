@@ -37,7 +37,7 @@ export default function Help() {
           size={8}
           onPress={() => navigation.goBack()}
         />
-        <Text color='white' fontSize={32} fontWeight={400}>
+        <Text color='white' fontSize={32} fontWeight={400} letterSpacing={2}>
           Help
         </Text>
       </View>
