@@ -21,6 +21,7 @@ import { customTheme } from './src/theme/CustomTheme';
 
 import BottomTab from './src/navigation/BottomTab';
 import Settings from './src/screens/Settings';
+import Help from './src/screens/help';
 
 function HomeScreen() {
   return (
@@ -92,7 +93,7 @@ export default function App() {
           initialRouteName='Your Trips'
         >
           <Drawer.Screen name='Your Trips' component={BottomTab} />
-          <Drawer.Screen name='Help' component={HomeScreen} />
+          <Drawer.Screen name='Help' component={Help} />
           <Drawer.Screen name='Wallet' component={HomeScreen} />
           <Drawer.Screen name='Settings' component={Settings} />
         </Drawer.Navigator>
