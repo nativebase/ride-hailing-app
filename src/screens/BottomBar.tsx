@@ -20,10 +20,10 @@ export default function BottomBar() {
       <Box width='100%' bg='primaryDark' borderRadius='5px' py={5} px={5}>
         <VStack space={2}>
           <Text py={1} color='white' fontSize={24} fontWeight={500}>
-            Book UberGo Sedan
+            Ready when you are
           </Text>
           <Text color='white' fontSize={16} fontWeight={400} pr={10}>
-            Enjoy a comfortable affordable ride with UberGo Sedan
+            Here to help you move safely in the new everyday
           </Text>
           <Row justifyContent='space-between' alignItems='center'>
             <HStack space={2} alignItems={'center'}>
