@@ -35,22 +35,29 @@ function HomeScreen() {
 function CustomDrawerContent(props: any) {
   return (
     <>
-      <View bg='black' p={4} mb={2}>
-        <Row mb={4} alignItems='center'>
+      <View bg='black' mb={2} pt={35}>
+        <Row mb={4} alignItems='center' p={4}>
           <Icon viewBox='0 0 16 16' color='grey' size={10}>
             <Path d='M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z' />
             <Path d='M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z' />
             <Path d='M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z' />
           </Icon>
-          <Text color='white' pl={4} fontSize={18} fontWeight={500}>
+          <Text color='white' pl={4} fontSize={20} fontWeight={400}>
             Vidhi Kataria
           </Text>
         </Row>
-        <Divider borderColor='gray.500' borderWidth='0.3px' />
-        <Row mt={4}>
+        <Divider borderColor='gray.500' borderWidth={0.5} ml={4} />
+        <Row p={4} justifyContent={'space-between'} alignItems={'center'}>
+          <Text color={'white'} fontWeight={400} fontSize={18}>
+            Messages
+          </Text>
+          <Icon name={'chevron-right'} color='white' size={8} />
+        </Row>
+        <Divider borderColor='gray.500' borderWidth={0.5} ml={4} />
+        <Row mt={4} px={4}>
           <Text color='gray.200'>Do more with your account</Text>
         </Row>
-        <Row mt={4}>
+        <Row mt={4} px={4} pb={5}>
           <Text color='white' fontWeight={500}>
             Make money driving
           </Text>
